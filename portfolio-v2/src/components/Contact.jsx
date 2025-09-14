@@ -1,35 +1,36 @@
+import React from "react";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa6";
+
 export default function Contact() {
   return (
-    <section id="contato" class="py-12 bg-white">
-      <div class="max-w-4xl mx-auto text-center px-6">
-        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-            📬 Contato
-        </h2>
-        <p class="text-gray-600 mb-8">
-          Você pode me encontrar nas redes sociais ou enviar um e-mail:
+    <section id="contact" className="py-16 bg-gray-50">
+      <div className="max-w-4xl mx-auto px-6 text-center">
+        <h2 className="text-3xl font-bold mb-12">📬 Contato</h2>
+        <p className="text-gray-600 mb-8">
+          Você pode me encontrar nas redes sociais:
         </p>
-        <div class="flex justify-center gap-6">
+        <div className="flex justify-center gap-8 text-3xl">
           <a
             href="https://github.com/Guitor-92"
             target="_blank"
-            rel="noreferrer"
-            class="text-gray-700 hover:text-blue-600 transition"
+            rel="noopener noreferrer"
+            className="text-gray-800 hover:text-blue-600 transition"
           >
-            <i class="fab fa-github text-3xl">Github</i>
+            <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/guilherme-vitor-guitor/"
+            href="https://www.linkedin.com/in/seu-linkedin"
             target="_blank"
-            rel="noreferrer"
-            class="text-gray-700 hover:text-blue-600 transition"
+            rel="noopener noreferrer"
+            className="text-gray-800 hover:text-blue-600 transition"
           >
-            <i class="fab fa-linkedin text-3xl">Linkedin</i>
+            <FaLinkedin />
           </a>
           <a
-            href="mailto:vitorguilh@hotmail.com"
-            class="text-gray-700 hover:text-blue-600 transition"
+            href="mailto:seuemail@email.com"
+            className="text-gray-800 hover:text-blue-600 transition"
           >
-            <i class="fas fa-envelope text-3xl">E-mail</i>
+            <FaEnvelope />
           </a>
         </div>
       </div>
