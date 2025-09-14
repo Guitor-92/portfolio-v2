@@ -2,8 +2,8 @@ import SectionWrapper from "./SectionWrapper";
 
 export default function About() {
   return (
-    <SectionWrapper id="about">
-      <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center md:text-left mb-12">
+    <SectionWrapper id="about" className="bg-gray-50">
+      <h2 className="text-3xl font-bold mb-12 text-center">
         👨‍💻 Sobre mim
       </h2>
 
