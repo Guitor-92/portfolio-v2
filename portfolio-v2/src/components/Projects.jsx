@@ -1,4 +1,5 @@
 import React from "react";
+import SectionWrapper from "./SectionWrapper";
 
 const projects = [
   {
@@ -20,14 +21,14 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-16 bg-white">
-      <div className="max-w-6xl mx-auto px-6 text-center">
+    <SectionWrapper id="projects" className="bg-white">
+      <div className="text-center">
         <h2 className="text-3xl font-bold mb-12">🚀 Projetos</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition"
+              className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition text-left"
             >
               <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
               <p className="text-gray-600 mb-4">{project.description}</p>
@@ -43,6 +44,6 @@ export default function Projects() {
           ))}
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   );
 }
