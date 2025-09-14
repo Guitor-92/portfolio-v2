@@ -20,7 +20,7 @@ export default function Hero() {
           {/* Botões */}
           <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a
-              href="https://www.linkedin.com/in/guilherme-vitor"
+              href="https://www.linkedin.com/in/guilherme-vitor-guitor/"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 bg-sky-600 text-white font-medium rounded-lg shadow hover:bg-sky-700 transition"
