@@ -1,10 +1,9 @@
+import SectionWrapper from "./SectionWrapper";
+
 export default function About() {
   return (
-    <section
-      id="about"
-      className="max-w-5xl mx-auto px-6 py-20 text-center md:text-left"
-    >
-      <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+    <SectionWrapper id="about">
+      <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center md:text-left mb-12">
         👨‍💻 Sobre mim
       </h2>
 
@@ -34,6 +33,6 @@ export default function About() {
           </p>
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   );
 }
