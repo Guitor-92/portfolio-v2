@@ -2,7 +2,7 @@ import SectionWrapper from "./SectionWrapper";
 
 export default function Hero() {
   return (
-    <SectionWrapper id="home">
+    <SectionWrapper id="home" className="bg-white">
       <div className="flex flex-col md:flex-row items-center justify-between">
         {/* Texto */}
         <div className="flex-1 text-center md:text-left">
