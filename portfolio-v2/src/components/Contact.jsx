@@ -1,10 +1,11 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa6";
+import SectionWrapper from "./SectionWrapper";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-16 bg-gray-50">
-      <div className="max-w-4xl mx-auto px-6 text-center">
+    <SectionWrapper id="contact" className="bg-gray-50">
+      <div className="text-center">
         <h2 className="text-3xl font-bold mb-12">📬 Contato</h2>
         <p className="text-gray-600 mb-8">
           Você pode me encontrar nas redes sociais:
@@ -19,7 +20,7 @@ export default function Contact() {
             <FaGithub />
           </a>
           <a
-            href="https://www.linkedin.com/in/seu-linkedin"
+            href="https://www.linkedin.com/in/guilherme-vitor-guitor/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-800 hover:text-blue-600 transition"
@@ -27,13 +28,13 @@ export default function Contact() {
             <FaLinkedin />
           </a>
           <a
-            href="mailto:seuemail@email.com"
+            href="mailto:vitorguilh@hotmail.com"
             className="text-gray-800 hover:text-blue-600 transition"
           >
             <FaEnvelope />
           </a>
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   );
 }
