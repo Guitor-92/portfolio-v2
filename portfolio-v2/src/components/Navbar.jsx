@@ -18,6 +18,9 @@ export default function Navbar() {
             <a href="#projects" className="text-gray-700 hover:text-sky-600">
               Projetos
             </a>
+            <a href="#skills" className="text-gray-700 hover:text-sky-600">
+              Habilidades
+            </a>
             <a href="#contact" className="text-gray-700 hover:text-sky-600">
               Contato
             </a>
@@ -49,6 +52,12 @@ export default function Navbar() {
             className="block px-4 py-2 text-gray-700 hover:bg-sky-100"
           >
             Projetos
+          </a>
+          <a
+            href="#skills"
+            className="block px-4 py-2 text-gray-700 hover:bg-sky-100"
+          >
+            Habilidades
           </a>
           <a
             href="#contact"
