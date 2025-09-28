@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
 import {
   FaGithub,
   FaLinkedin,
@@ -13,29 +12,34 @@ export default function Contact() {
   const form = useRef();
   const [status, setStatus] = useState(""); // "", "sending", "success", "error"
 
-  const sendEmail = (e) => {
+  const sendContact = async (e) => {
     e.preventDefault();
     setStatus("sending");
 
-    emailjs
-      .sendForm(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-        form.current,
-        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setStatus("success");
-          form.current.reset();
-          setTimeout(() => setStatus(""), 5000); // Reseta o status após 5s
+    const data = {
+      name: form.current.user_name.value,
+      email: form.current.user_email.value,
+      message: form.current.message.value,
+    };
+
+    try {
+      const response = await fetch("http://localhost:5135/contato", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
         },
-        (error) => {
-          console.log("FAILED...", error.text);
-          setStatus("error");
-          setTimeout(() => setStatus(""), 5000); // Reseta o status após 5s
-        }
-      );
+        body: JSON.stringify(data),
+      });
+      if (response.ok) {
+        setStatus("success");
+        form.current.reset();
+      } else {
+        setStatus("error");
+      }
+    } catch (err) {
+      setStatus("error");
+    }
+    setTimeout(() => setStatus(""), 5000);
   };
 
   return (
@@ -48,7 +52,7 @@ export default function Contact() {
         </p>
 
         {/* Formulário */}
-        <form ref={form} onSubmit={sendEmail} className="space-y-6 text-left">
+        <form ref={form} onSubmit={sendContact} className="space-y-6 text-left">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <label

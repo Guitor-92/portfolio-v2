@@ -1,4 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
 
+.swiper {
+  width: 100%;
+  height: 100%;
+  overflow: visible; /* Permite que as setas fiquem visíveis fora do contêiner */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #0ea5e9;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  z-index: 20;
+  /* Posiciona fora do card */
+  margin-top: 0;
+}
+
+.swiper-button-next {
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.swiper-button-prev {
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 22px;
+}

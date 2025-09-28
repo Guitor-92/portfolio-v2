@@ -38,12 +38,16 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Imagem futura */}
-        <div className="flex-1 mt-10 md:mt-0 md:ml-10 flex justify-center">
-          <div className="w-64 h-64 bg-gray-200 rounded-full shadow-inner flex items-center justify-center">
-            <span className="text-gray-500">[Imagem futura]</span>
-          </div>
-        </div>
+        {/* Imagem do perfil */}
+<div className="flex-1 mt-10 md:mt-0 md:ml-10 flex justify-center">
+  <div className="w-64 h-64 bg-gray-200 rounded-full shadow-inner flex items-center justify-center">
+    <img
+      src={require('../assets/profile.jpg')}
+      alt="Foto de Guilherme Vitor"
+      className="rounded-full w-56 h-56 object-cover border-1 border-white shadow-lg"
+    />
+  </div>
+</div>
       </div>
     </SectionWrapper>
   );

@@ -10,32 +10,83 @@
 
 export const projects = [
   {
-    title: "Meu Sistema de Gestão",
+    name: "Minimal API",
     description:
-      "Uma aplicação web completa para gerenciamento de tarefas, construída com uma API em .NET e um frontend dinâmico em React.",
-    image: "https://via.placeholder.com/400x250/67e8f9/0f172a?text=Meu+Projeto", // Substitua pela sua imagem
-    tags: ["React", ".NET", "SQL Server"],
-    github: "https://github.com/Guitor-92",
-    liveUrl: "https://meuprojeto.online", // Link para o projeto no ar
+      "API minimalista desenvolvida com ASP.NET Core, focada em boas práticas, endpoints enxutos e integração fácil com frontends modernos.",
+    technologies: ["C#", "ASP.NET Core", "REST"],
+    image: "placeholder.jpg", // coloque a imagem em src/assets
+    github: "https://github.com/Guitor-92/minimal-api",
+    deploy: "", // Adicione o link do deploy se disponível
+    type: "Backend",
   },
   {
-    title: "API de E-commerce",
+    name: "ToDoApp",
     description:
-      "API RESTful para um sistema de e-commerce, utilizando ASP.NET Core e arquitetura limpa.",
-    image:
-      "https://via.placeholder.com/400x250/f87171/18181b?text=API+E-commerce", // Substitua pela sua imagem
-    tags: ["C#", "ASP.NET Core", "Docker"],
-    github: "https://github.com/Guitor-92",
-    liveUrl: null, // Deixe como null se não houver link de deploy
+      "Aplicação de lista de tarefas com CRUD, ideal para demonstrar integração full-stack e domínio de lógica de negócio.",
+    technologies: ["C#", "ASP.NET Core", "React", "SQL"],
+    image: "placeholder.jpg",
+    github: "https://github.com/Guitor-92/ToDoApp",
+    deploy: "",
+    type: "Full-Stack",
   },
   {
-    title: "Clone do Netflix com Blazor",
+    name: "Trilha .NET Banco de Dados",
     description:
-      "Um clone da interface do Netflix desenvolvido com Blazor WebAssembly para praticar C# no frontend.",
-    image:
-      "https://via.placeholder.com/400x250/d8b4fe/1e1b4b?text=Clone+Netflix", // Substitua pela sua imagem
-    tags: ["Blazor", "C#", "TailwindCSS"],
-    github: "https://github.com/Guitor-92",
-    liveUrl: "https://meuclone.netlify.app",
+      "Projeto focado em persistência de dados com .NET e SQL, mostrando domínio de banco de dados e arquitetura backend.",
+    technologies: ["C#", ".NET", "SQL Server"],
+    image: "placeholder.jpg",
+    github: "https://github.com/Guitor-92/trilha-net-banco-de-dados-desafio",
+    deploy: "",
+    type: "Backend",
+  },
+  {
+    name: "Beer API",
+    description:
+      "API RESTful para gerenciamento de cervejas, desenvolvida em C# e ASP.NET Core, com documentação e testes.",
+    technologies: ["C#", "ASP.NET Core", "REST"],
+    image: "placeholder.jpg",
+    github: "https://github.com/Guitor-92/beer_api_digital_innovation_one",
+    deploy: "",
+    type: "Backend",
+  },
+  {
+    name: "Estacionamento",
+    description:
+      "Sistema de controle de estacionamento, com regras de negócio, persistência e arquitetura limpa em C#.",
+    technologies: ["C#", ".NET", "SQL"],
+    image: "placeholder.jpg",
+    github: "https://github.com/Guitor-92/estacionamento",
+    deploy: "",
+    type: "Backend",
+  },
+  {
+    name: "DIO.Series",
+    description:
+      "Catálogo de séries com operações CRUD, ideal para mostrar arquitetura, boas práticas e domínio de C#.",
+    technologies: ["C#", ".NET"],
+    image: "placeholder.jpg",
+    github: "https://github.com/Guitor-92/DIO.Series",
+    deploy: "",
+    type: "Backend",
+  },
+  {
+    name: "Recriando Interface Netflix",
+    description:
+      "Clone da interface da Netflix, focado em frontend moderno, responsividade e animações.",
+    technologies: ["React", "CSS", "JavaScript"],
+    image: "placeholder.jpg",
+    github: "https://github.com/Guitor-92/Recriando-Interface-Netflix",
+    deploy: "",
+    type: "Frontend",
+  },
+  {
+    name: "Site Final",
+    description:
+      "Site completo com layout moderno, ideal para mostrar domínio em design, estrutura e responsividade.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    image: "placeholder.jpg",
+    github: "https://github.com/Guitor-92/Site_Final",
+    deploy: "",
+    type: "Frontend",
   },
 ];

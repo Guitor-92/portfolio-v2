@@ -10,10 +10,14 @@ export default function About() {
       <div className="flex flex-col md:flex-row items-center gap-10">
         {/* Foto / avatar */}
         <div className="flex-shrink-0">
-          <div className="w-40 h-40 rounded-full bg-gray-200 flex items-center justify-center shadow-md">
-            <span className="text-gray-500">[Sua foto]</span>
-          </div>
-        </div>
+  <div className="w-40 h-40 rounded-full bg-gray-200 flex items-center justify-center shadow-md">
+    <img
+      src={require('../assets/about.jpg')}
+      alt="Foto de Guilherme Vitor"
+      className="rounded-full w-36 h-36 object-cover border-4 border-white shadow-lg transition-transform duration-300 hover:scale-105"
+    />
+  </div>
+</div>
 
         {/* Texto */}
         <div className="flex-1">
