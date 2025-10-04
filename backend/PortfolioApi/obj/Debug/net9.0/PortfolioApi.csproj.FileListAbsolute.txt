@@ -34,3 +34,4 @@ C:\Users\vitor\OneDrive\Documents\Projetos\portfolio-v2\backend\PortfolioApi\obj
 C:\Users\vitor\OneDrive\Documents\Projetos\portfolio-v2\backend\PortfolioApi\obj\Debug\net9.0\PortfolioApi.pdb
 C:\Users\vitor\OneDrive\Documents\Projetos\portfolio-v2\backend\PortfolioApi\obj\Debug\net9.0\PortfolioApi.genruntimeconfig.cache
 C:\Users\vitor\OneDrive\Documents\Projetos\portfolio-v2\backend\PortfolioApi\obj\Debug\net9.0\ref\PortfolioApi.dll
+C:\Users\vitor\OneDrive\Documents\Projetos\portfolio-v2\backend\portfolioapi\bin\Debug\net9.0\railway.json
