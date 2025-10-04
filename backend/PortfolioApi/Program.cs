@@ -11,7 +11,8 @@ builder.Services.AddCors(options =>
         policy => policy
             .WithOrigins(
                 "http://localhost:3000",
-                "https://portfolio-v2-66fchx8b9-guilherme-vitor-neves-pereiras-projects.vercel.app"
+                "https://portfolio-v2-66fchx8b9-guilherme-vitor-neves-pereiras-projects.vercel.app",
+                "https://portfolio-v2-blond.vercel.app"
             )
             .AllowAnyHeader()
             .AllowAnyMethod()
