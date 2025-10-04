@@ -9,7 +9,10 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend",
         policy => policy
-            .WithOrigins("http://localhost:3000") // ajuste para o domínio do seu frontend em produção
+            .WithOrigins(
+                "http://localhost:3000",
+                "https://portfolio-v2-66fchx8b9-guilherme-vitor-neves-pereiras-projects.vercel.app"
+            )
             .AllowAnyHeader()
             .AllowAnyMethod()
     );
@@ -44,3 +47,4 @@ app.MapPost("/contato", async (PortfolioApi.DTOs.ContactRequestDto dto) =>
 });
 
 app.Run();
+
