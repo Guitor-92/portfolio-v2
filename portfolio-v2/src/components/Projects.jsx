@@ -11,10 +11,10 @@ export default function Projects() {
       <h2 className="text-3xl font-bold mb-12 text-center">
         🚀 Projetos em Destaque
       </h2>
-      <div className="px-12 md:px-16">
+      <div className="px-2 md:px-16">
         <Swiper
-          spaceBetween={30}
-          slidesPerView={3}
+          spaceBetween={16}
+          slidesPerView={1}
           breakpoints={{
             640: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
@@ -22,11 +22,11 @@ export default function Projects() {
           }}
           loop={true}
           navigation={true}
-          modules={[Navigation]}          
+          modules={[Navigation]}
         >
           {projects.map((project, idx) => (
-            <SwiperSlide key={idx} className="group">
-              <div className="bg-gray-50 rounded-xl shadow-lg p-6 flex flex-col group-hover:scale-105 transition-transform duration-300 h-full">
+            <SwiperSlide key={idx} className="group flex justify-center">
+              <div className="min-w-[260px] max-w-xs w-full bg-gray-50 rounded-xl shadow-lg p-4 flex flex-col group-hover:scale-105 transition-transform duration-300 h-full">
                 <div className="w-full h-40 mb-4 flex items-center justify-center">
                   <img
                     src={require(`../assets/${project.image}`)}
