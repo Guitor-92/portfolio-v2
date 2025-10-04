@@ -22,8 +22,10 @@ export default function Contact() {
       message: form.current.message.value,
     };
 
+    const apiUrl = process.env.REACT_APP_API_URL;
+
     try {
-      const response = await fetch("http://localhost:5135/contato", {
+      const response = await fetch(`${apiUrl}/contato`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
